@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Order Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pizza Order Form</h1>
+    </header>
+    <main>
+        <img class="pizza" src="pizza.jpg" alt="round pizza">
+        
+        <form action="order_confirmation.html" method="post">
+            <!-- Number of pizzas -->
+            <div class="form-group">
+                <label for="pizza_count">Number of pizzas:</label>
+                <input type="number" id="pizza_count" name="pizza_count" min="1" required>
+            </div>
+            
+            <!-- Size -->
+            <div class="form-group">
+                <label for="pizza_size">Size:</label>
+                <select id="pizza_size" name="pizza_size" required>
+                    <option value="small">Small (8 slices)</option>
+                    <option value="medium">Medium (12 slices)</option>
+                    <option value="large">Large (16 slices)</option>
+                </select>
+            </div>
+            <!-- Shape -->
+            <div class="form-group">
+                <fieldset>
+                    <legend>Shape:</legend>
+                    <label><input type="radio" name="pizza_shape" value="square" checked> Square</label>
+                    <label><input type="radio" name="pizza_shape" value="round"> Round</label>
+                </fieldset>
+            </div>
+            
+            <!-- Toppings -->
+            <div class="form-group">
+                <label>Toppings:</label> 
+                <label><input type="checkbox" name="toppings[]" value="pepperoni"> Pepperoni</label>
+                <label><input type="checkbox" name="toppings[]" value="mushrooms"> Mushrooms</label>
+                <label><input type="checkbox" name="toppings[]" value="onions"> Onions</label>
+                <label><input type="checkbox" name="toppings[]" value="sausage"> Sausage</label>
+                <label><input type="checkbox" name="toppings[]" value="olives"> Olives</label>
+            </div>
+            <!-- Crust type -->
+            <div class="form-group">
+                <label for="crust_type">Crust type:</label>
+                <select id="crust_type" name="crust_type" required>
+                    <option value="regular">Regular</option>
+                    <option value="deep_dish">Deep dish</option>
+                    <option value="thin">Thin crust</option>
+                </select>
+            </div>
+            <!-- Delivery method -->
+            <div class="form-group">
+                <fieldset>
+                    <legend>Delivery method:</legend>
+                    <label><input type="radio" name="delivery_method" value="take_out" checked> Take out</label>
+                    <label><input type="radio" name="delivery_method" value="delivery"> Delivery</label>
+                    <label><input type="radio" name="delivery_method" value="eat_in"> Eat in</label>
+                </fieldset>
+            </div>
+            <!-- Additional instructions -->
+            <button set> submit </buttonset>

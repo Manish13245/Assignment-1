@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.pizza {
+width: 500px;
+height: 300px;
+display: block;
+margin: auto;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input[type="text"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.form-group input[type="submit"],
+.form-group input[type="reset"] {
+    width: auto;
+    padding: 5px 10px;
+    cursor: pointer;
+}
